@@ -32,49 +32,44 @@
             <h1>Issue Tracker</h1>
             <!-- Button trigger modal -->
             <div id="contenedor-btn-agregar">
-                <button id="btn-modal-agregar" type="button" class="btn btn-primary" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">
-                    Agregar
-                </button>
+                <button id="modal-show" type="button" class="btn btn-primary">Mostrar</button>
+
             </div>
 
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Nueva Tarea</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-
-                        <div class="modal-body">
-                            <form class="row g-3">
-                                <div class="col-md-6">
-                                    <label for="inputTitulo" class="form-label">Titulo</label>
-                                    <input type="text" class="form-control" id="inputTitulo">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="inputResponsable" class="form-label">Responsable</label>
-                                    <input type="text" class="form-control" id="inputResponsable">
-                                </div>
-                                <div class="col-12">
-                                    <label for="inputDescripcion" class="form-label">Descripcion</label>
-                                    <textarea class="form-control" id="inputDescripcion" placeholder=""></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <label for="inputEntrega" class="form-label">Entrega</label>
-                                    <input type="date" class="form-control" id="inputEntrega">
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                            <button type="button" class="btn btn-primary" id="btn-guardar">Guardar</button>
-                        </div>
+            <div id="modal-backdrop">
+                <div id="modal" class="">
+                    <div class=" modal-content" id="contenido-modal">
+                    <div class="modal-header">
+                        <h5>Agregar</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                                <label for="inputTitulo" class="form-label">Titulo</label>
+                                <input type="text" class="form-control" id="inputTitulo">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputResponsable" class="form-label">Responsable</label>
+                                <input type="text" class="form-control" id="inputResponsable">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputDescripcion" class="form-label">Descripcion</label>
+                                <textarea class="form-control" id="inputDescripcion" placeholder=""></textarea>
+                            </div>
+                            <div class="col-12">
+                                <label for="inputEntrega" class="form-label">Entrega</label>
+                                <input type="date" class="form-control" id="inputEntrega">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="modal-hide" class="btn bt-secondary">Cancelar</button>
+                        <button id="btn-guardar" class="btn btn-primary">Guardar</button>
                     </div>
                 </div>
             </div>
+
         </nav>
     </section>
     <section>
